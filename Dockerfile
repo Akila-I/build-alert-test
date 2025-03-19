@@ -5,7 +5,7 @@ FROM golang:1.21
 WORKDIR /app
 
 # Try to copy a non-existent Go file
-COPY app.go .
+COPY main.go .
 
 # Build the Go application
 RUN go build -o main .

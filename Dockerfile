@@ -6,6 +6,7 @@ WORKDIR /app
 
 # Try to copy a non-existent Go file
 COPY main.go .
+COPY go.mod .
 
 # Build the Go application
 RUN go build -o main .
